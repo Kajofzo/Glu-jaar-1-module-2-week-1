@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="assets/css/style.css">
 <div id="container">
     <h1>Velden voor een Html-formulier</h1>
     <form>
-        <h2>Tekstvelden</h2>
-        <p>Voornaam: <input type="text" name="voornaam"/></p>
-        <p>Achternaam: <input type="text" name="achternaam" /></p>
-        <p><input type="password" name="pwd" />&nbsp;&nbsp;defineert eeen wachtwoord veld</p>
+        <fieldset>
+        <legend><h2>Tekstvelden</h2></legend>
+        <p><label for="voornaam">Voornaam:</label> <input id="voornaam" type="text" name="Voornaam:"/></p>
+        <p><label for="achternaam">Achternaam:</label> <input type="text" name="Achternaam:"/></p>
+        <p><label for="password">Wachtwoord:</label><input type="password" name="pwd"/></p>
+        </fieldset>
         <h2>Radio Buttons</h2>
         <p><input type="radio" name="geslacht" value="man"/> Man</p>
         <p><input type="radio" name="geslacht" value="vrouw"/> Vrouw</p>
